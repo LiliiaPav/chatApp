@@ -1,0 +1,141 @@
+/*Global*/
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+section{
+    position: fixed;
+    height: 100vh;
+    top: 10%
+}
+
+
+h1, h2{
+    color: #00838f;
+}
+
+/*App bar*/
+.headbar h1{
+    margin: 0;
+    padding-top: 32px;
+    font-size: 1.5rem;
+}
+.headbar{
+    margin: 0 0 20px 0;
+    background-color:#eee;
+    padding-bottom: 10px;
+
+}
+
+
+/*, color, height, font-size, padding and line-height*/
+
+img{
+    float:left;
+    background-color: #00838f;
+    z-index: 100;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+section .headbar {
+    margin-left: 10px;
+}
+
+#chat .headbar h1{
+    display: inline-block;
+    line-height: 1px;
+}
+/*Channels list*/
+ul{
+    list-style-type: none;
+    
+}
+
+li{
+    margin-left: -2.5rem;
+    box-sizing: border-box;
+    padding: 22px;
+    height: 66px;
+  
+}
+#channelsView{
+    width: 399px;
+    height: 100vh;
+}
+#channelsView:after {
+    content: "";
+    background-color: grey;
+    position: absolute;
+    width: 1px;
+    height: 100vh;
+    top: -100px;
+    left: 100%;
+    display: block;
+  }
+
+#channelsView h2{
+    font-size: smaller;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.timestamp {
+    font-size: smaller;
+    color: gray;
+}
+
+.active{
+    background-color: #eee;
+    border-right: solid 2px #00838f;
+}
+
+/*Messages*/
+
+
+#chat{
+    left:400px;
+    width: calc(100% - 400px);
+    top:0;
+}
+
+
+
+
+.message h2{
+    font-size: 0.8rem;
+    font-weight:bold;
+}
+
+
+.message{
+    width: 75%;
+    margin-left: 10px;
+  
+    padding: 10px;
+}
+
+.time{
+    font-size: smaller;
+}
+button {
+    background-color: #00838f;
+    text-transform: uppercase;
+    color: white;
+    font-size: larger;
+
+}
+
+.outgoing
+{
+    background-color: #00838f;
+    color:white
+}
+
+.incoming
+{
+    background-color: #eee;
+}
